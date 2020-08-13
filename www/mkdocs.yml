@@ -1,1 +1,11 @@
-site_name: My Docs
+site_name: sandbox
+site_description: Testing sandbox
+copyright: Made with ❤️ by Warrensbox contributors.
+repo_name: warrensbox/terraform-switcher
+repo_url: https://github.com/warrensbox/terraform-switcher
+edit_uri: edit/master/www/docs/
+
+nav:
+    - index.md
+    - intro.md
+

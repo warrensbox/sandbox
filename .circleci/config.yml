@@ -17,6 +17,8 @@ jobs:
             sudo apt-get install python3
             sudo apt-get install python3-pip
             pip3 install mkdocs-material
+            mkdocs gh-deploy --force
+
 workflows:
   version: 2
 

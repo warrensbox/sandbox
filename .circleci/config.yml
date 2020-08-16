@@ -19,22 +19,18 @@ jobs:
             rm -rf /var/lib/apt/lists/*
 
             echo "Installing tfswitch locally"
+
             wget https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh 
             chmod 755 install.sh
             ./install.sh -b bin-directory
 
-            CUSTOMBIN=`pwd`/bin
-
-            mkdir $CUSTOMBIN
-
-            echo $CUSTOMBIN
-
-            export PATH=$PATH:$CUSTOMBIN
+            CUSTOMBIN=`pwd`/bin             #set custom bin path
+            mkdir $CUSTOMBIN                #create custom bin path
+            export PATH=$PATH:$CUSTOMBIN    #Add custom bin path to PATH environment
 
             ./bin-directory/tfswitch -b $CUSTOMBIN/terraform 0.11.7
 
-
-            terraform -v
+            terraform -v                    #testing
 
 workflows:
   version: 2

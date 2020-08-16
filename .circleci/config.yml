@@ -25,11 +25,11 @@ jobs:
             chmod 755 install.sh
             ./install.sh -b bin-directory
 
-            CUSTOMBIN=`pwd`
+            CUSTOMBIN=`pwd`/bin
 
             mkdir $CUSTOMBIN
 
-            ./bin-directory/tfswitch 0.11.7 --bin $CUSTOMBIN
+            ./bin-directory/tfswitch 0.11.7 --bin $CUSTOMBIN/terraform
 
 workflows:
   version: 2

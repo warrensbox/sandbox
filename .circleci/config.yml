@@ -31,7 +31,7 @@ jobs:
 
             echo $CUSTOMBIN
 
-            ./bin-directory/tfswitch 0.11.7 -b $CUSTOMBIN/terraform 0.11.7
+            ./bin-directory/tfswitch -b $CUSTOMBIN/terraform 0.11.7
 
 workflows:
   version: 2

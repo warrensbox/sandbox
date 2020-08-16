@@ -19,7 +19,13 @@ jobs:
             pip3 install mkdocs-material
             cd www
             mkdocs gh-deploy --force
-            echo testing
+            echo "testing"
+            echo "Installing tfswitch locally"
+            wget https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh 
+            chmod 755 install.sh
+            ./install.sh -b bin-directory
+
+            ./bin-directory/tfswitch 0.11.7
 
 workflows:
   version: 2

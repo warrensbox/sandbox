@@ -7,4 +7,3 @@ If you do not have a particular version of terraform installed, `testtfswitch` l
 The installation is minimal and easy. 
 Once installed, simply select the version you require from the dropdown and start using terraform. 
 
-Terraform lets you safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.

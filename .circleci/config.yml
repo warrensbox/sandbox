@@ -31,7 +31,12 @@ jobs:
 
             echo $CUSTOMBIN
 
+            export PATH=$PATH:$CUSTOMBIN
+
             ./bin-directory/tfswitch -b $CUSTOMBIN/terraform 0.11.7
+
+
+            terraform -v
 
 workflows:
   version: 2

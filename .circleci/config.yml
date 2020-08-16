@@ -19,6 +19,7 @@ jobs:
             pip3 install mkdocs-material
             cd www
             mkdocs gh-deploy --force
+            echo test
 
 workflows:
   version: 2

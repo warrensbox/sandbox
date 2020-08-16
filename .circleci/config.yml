@@ -29,6 +29,8 @@ jobs:
 
             mkdir $CUSTOMBIN
 
+            echo $CUSTOMBIN
+
             ./bin-directory/tfswitch 0.11.7 -b $CUSTOMBIN/terraform
 
 workflows:

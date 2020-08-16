@@ -251,12 +251,89 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        How to Contribute
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
     
     <a href="./" title="How to Contribute" class="md-nav__link md-nav__link--active">
       How to Contribute
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-on-how-to-contribute" class="md-nav__link">
+    Step by step on how to contribute
+  </a>
+  
+    <nav class="md-nav" aria-label="Step by step on how to contribute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    Step 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    Step 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    Step 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    Step 4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    Step 5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    Contributors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -287,8 +364,71 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-on-how-to-contribute" class="md-nav__link">
+    Step by step on how to contribute
+  </a>
+  
+    <nav class="md-nav" aria-label="Step by step on how to contribute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    Step 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    Step 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    Step 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    Step 4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    Step 5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    Contributors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -308,27 +448,29 @@
                   
                 
                 
+                  <h1>How to Contribute</h1>
+                
                 <h2 id="step-by-step-on-how-to-contribute">Step by step on how to contribute</h2>
 <p>What makes an open source project meaningful is the ability for people to collaborate and improve the code. If I were to write all the code by myself, then I am only creating a software that is solely based on my opnion and purpose. </p>
 <p>Please look at the code, critique and make suggestions. It would be a learning opportunity for all of us. </p>
-<h1 id="step-1">Step 1</h1>
+<h3 id="step-1">Step 1</h3>
 <p><em>Skip this step if you already have a github go workspace</em> <br />
 Create a github workspace.
 <img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-workspace.gif" alt="drawing" style="width: 600px;"/>   </p>
-<h1 id="step-2">Step 2</h1>
+<h3 id="step-2">Step 2</h3>
 <p><em>Skip this step if you already have a github go workspace</em>  <br />
 Export your GOPATH environment variable in your <code>go</code> directory.   </p>
 <pre><code class="sh">export GOPATH=`pwd`
 </code></pre>
 
 <p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-gopath.gif" alt="drawing" style="width: 600px;"/>   </p>
-<h1 id="step-3">Step 3</h1>
+<h3 id="step-3">Step 3</h3>
 <p>Git clone this repository.  </p>
 <pre><code class="sh">git clone git@github.com:warrensbox/terraform-switcher.git
 </code></pre>
 
 <p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-git-clone.gif" alt="drawing" style="width: 600px;"/>  </p>
-<h1 id="step-4">Step 4</h1>
+<h3 id="step-4">Step 4</h3>
 <p>Go get all the dependencies.   </p>
 <pre><code class="sh">go mod download
 </code></pre>
@@ -344,7 +486,7 @@ Export your GOPATH environment variable in your <code>go</code> directory.   </p
 </code></pre>
 
 <p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-go-get.gif" alt="drawing" style="width: 600px;"/>  </p>
-<h1 id="step-5">Step 5</h1>
+<h3 id="step-5">Step 5</h3>
 <p>Create a new branch.   </p>
 <pre><code class="sh">git checkout -b feature/put-your-branch-name-here
 </code></pre>
@@ -356,7 +498,7 @@ Go build the code.   </p>
 
 <p>Test the code and create a new pull request!</p>
 <p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-build.gif" alt="drawing" style="width: 600px;"/>  </p>
-<h1 id="contributors">Contributors</h1>
+<h3 id="contributors">Contributors</h3>
 <p><img style="text-allign:center" src="https://avatars3.githubusercontent.com/u/38867521?s=64&v=4" alt="drawing" width="42" height="42"/> <img style="text-allign:center" src="https://avatars2.githubusercontent.com/u/10674287?s=64&v=4" alt="drawing" width="42" height="42"/> <img style="text-allign:center" src="https://avatars1.githubusercontent.com/u/9209870?s=64&v=4" alt="drawing" width="42" height="42"/> <img style="text-allign:center" src="
 https://avatars0.githubusercontent.com/u/49199497?s=64&v=4" alt="drawing" width="42" height="42"/> <img style="text-allign:center" src="https://avatars1.githubusercontent.com/u/435832?s=64&v=4" alt="drawing" width="42" height="42"/></p>
 <p><img style="text-allign:center" src="https://avatars1.githubusercontent.com/u/1022296?s=64&v=4" alt="drawing" width="42" height="42"/> <img style="text-allign:center" src="https://avatars2.githubusercontent.com/u/1111441?s=64&v=4" alt="drawing" width="42" height="42"/> <img style="text-allign:center" src="https://avatars1.githubusercontent.com/u/1266467?s=64&v=4" alt="drawing" width="42" height="42"/> <img style="text-allign:center" src="https://avatars3.githubusercontent.com/u/2305030?s=64&v=4" alt="drawing" width="42" height="42"/> <img style="text-allign:center" src="https://avatars1.githubusercontent.com/u/4919969?s=64&v=4" alt="drawing" width="42" height="42"/> </p>

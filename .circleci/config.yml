@@ -14,8 +14,9 @@ jobs:
       - run: 
           command: |    
             set +e   
+            sudo apt-get install python3
             sudo apt-get install python-pip
-            sudo apk add python3
+
 
 workflows:
   version: 2

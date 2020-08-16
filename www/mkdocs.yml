@@ -4,6 +4,7 @@ copyright: This project is maintained by warrensbox
 repo_name: warrensbox/terraform-switcher
 repo_url: https://github.com/warrensbox/terraform-switcher
 edit_uri: edit/master/www/docs/
+site_url: https://sandbox.warrensbox.com
 
 theme:
     name: material

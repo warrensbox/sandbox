@@ -5,7 +5,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/golang:1.13
+      - image: ubuntu
 
     working_directory: /go/src/github.com/warrensbox/terraform-switcher
 
@@ -14,11 +14,6 @@ jobs:
       - run: 
           command: |    
             set +e   
-            sudo apt-get install python3
-            sudo apt-get install python3-pip
-            pip3 install mkdocs-material
-            cd www
-            mkdocs gh-deploy --force
             echo "testing"
             echo "Installing tfswitch locally"
             wget https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh 

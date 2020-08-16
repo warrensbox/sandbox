@@ -25,7 +25,11 @@ jobs:
             chmod 755 install.sh
             ./install.sh -b bin-directory
 
-            ./bin-directory/tfswitch 0.11.7
+            CUSTOMBIN=`pwd`
+
+            mkdir CUSTOMBIN
+
+            ./bin-directory/tfswitch 0.11.7 --bin CUSTOMBIN
 
 workflows:
   version: 2

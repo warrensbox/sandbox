@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# Introduction to testtfswitch
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<img style="text-allign:center" src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/logo.png" alt="drawing" width="230" height="130"/>
 
-## Commands
+The `testtfswitch` command line tool lets you switch between different versions of <a href="https://www.terraform.io/" target="_blank">terraform</a>.
+If you do not have a particular version of terraform installed, `testtfswitch` lets you download the version you desire.
+The installation is minimal and easy. 
+Once installed, simply select the version you require from the dropdown and start using terraform. 
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Terraform lets you safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.

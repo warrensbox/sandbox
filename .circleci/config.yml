@@ -29,7 +29,7 @@ jobs:
 
             mkdir $CUSTOMBIN
 
-            ./bin-directory/tfswitch 0.11.7 --bin $CUSTOMBIN/terraform
+            ./bin-directory/tfswitch 0.11.7 -b $CUSTOMBIN/terraform
 
 workflows:
   version: 2

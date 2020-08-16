@@ -14,7 +14,10 @@ jobs:
       - run: 
           command: |    
             set +e   
-            echo "testing"
+            apt-get update 
+            apt-get install -y wget 
+            rm -rf /var/lib/apt/lists/*
+
             echo "Installing tfswitch locally"
             wget https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh 
             chmod 755 install.sh

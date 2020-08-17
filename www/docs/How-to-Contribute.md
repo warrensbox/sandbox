@@ -2,7 +2,7 @@
 
 An open source project becomes meaningful when people collaborate to improve the code. If I were to write all the code by myself, then I am only creating a software solely on my opnion and purpose. 
 
-So, please look at the code, critique and make suggestions. Lets make `tfswitch` better!
+So, please look at the code, critique and make suggestions. Lets make `testtfswitch` better!
 
 ## Required version
 ```sh
@@ -12,7 +12,7 @@ go version 1.13
 ### Step 1 - Create workspace
 *Skip this step if you already have a github go workspace*   
 Create a github workspace.
-<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-workspace.gif" alt="drawing" style="width: 600px;"/>   
+<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch-workspace.gif" alt="drawing" style="width: 600px;"/>   
 
 ### Step 2 - Set GOPATH
 *Skip this step if you already have a github go workspace*    
@@ -20,14 +20,14 @@ Export your GOPATH environment variable in your `go` directory.
 ```sh
 export GOPATH=`pwd`
 ```
-<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-gopath.gif" alt="drawing" style="width: 600px;"/>   
+<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch-gopath.gif" alt="drawing" style="width: 600px;"/>   
 
 ### Step 3 - Clone repository
 Git clone this repository.  
 ```sh 
 git clone git@github.com:warrensbox/terraform-switcher.git
 ```
-<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-git-clone.gif" alt="drawing" style="width: 600px;"/>  
+<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch-git-clone.gif" alt="drawing" style="width: 600px;"/>  
 
 ### Step 4 - Get dependencies
 Go get all the dependencies.   
@@ -45,7 +45,7 @@ go vet -tests=false ./...
 ```sh 
 go test -v ./...
 ```
-<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-go-get.gif" alt="drawing" style="width: 600px;"/>  
+<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch-go-get.gif" alt="drawing" style="width: 600px;"/>  
 
 ### Step 5 - Build executable
 Create a new branch.   
@@ -55,11 +55,11 @@ git checkout -b feature/put-your-branch-name-here
 Refactor and add new features to the code.  
 Go build the code.   
 ```sh 
-go build -o test-tfswitch
+go build -o test-testtfswitch
 ```
 Test the code and create a new pull request!
 
-<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-build.gif" alt="drawing" style="width: 600px;"/>  
+<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch-build.gif" alt="drawing" style="width: 600px;"/>  
 
 ### Contributors
 

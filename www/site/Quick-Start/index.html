@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://sandbox.warrensbox.com/Quick-Start/">
       
       
-      <link rel="shortcut icon" href="../static/favicon_tfswitch_16.png">
+      <link rel="shortcut icon" href="../static/favicon_testtfswitch_16.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.6">
     
     
@@ -188,8 +188,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Introduction to testtfswitch" class="md-nav__link">
-      Introduction to testtfswitch
+    <a href=".." title="Introduction to testtesttfswitch" class="md-nav__link">
+      Introduction to testtesttfswitch
     </a>
   </li>
 
@@ -279,15 +279,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-tfswitchtoml-file-for-non-admin-users-with-limited-privilege-on-their-computers" class="md-nav__link">
-    Use .tfswitch.toml file  (For non-admin - users with limited privilege on their computers)
+  <a href="#use-testtfswitchtoml-file-for-non-admin-users-with-limited-privilege-on-their-computers" class="md-nav__link">
+    Use .testtfswitch.toml file  (For non-admin - users with limited privilege on their computers)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-tfswitchrc-file" class="md-nav__link">
-    Use .tfswitchrc file
+  <a href="#use-testtfswitchrc-file" class="md-nav__link">
+    Use .testtfswitchrc file
   </a>
   
 </li>
@@ -412,15 +412,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-tfswitchtoml-file-for-non-admin-users-with-limited-privilege-on-their-computers" class="md-nav__link">
-    Use .tfswitch.toml file  (For non-admin - users with limited privilege on their computers)
+  <a href="#use-testtfswitchtoml-file-for-non-admin-users-with-limited-privilege-on-their-computers" class="md-nav__link">
+    Use .testtfswitch.toml file  (For non-admin - users with limited privilege on their computers)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-tfswitchrc-file" class="md-nav__link">
-    Use .tfswitchrc file
+  <a href="#use-testtfswitchrc-file" class="md-nav__link">
+    Use .testtfswitchrc file
   </a>
   
 </li>
@@ -454,25 +454,25 @@
                 
                 <h2 id="how-to-use">How to use:</h2>
 <h3 id="use-dropdown-menu-to-select-version">Use dropdown menu to select version</h3>
-<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch.gif" alt="drawing" style="width: 600px;"/></p>
+<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch.gif" alt="drawing" style="width: 600px;"/></p>
 <ol>
-<li>You can switch between different versions of terraform by typing the command <code>tfswitch</code> on your terminal.</li>
+<li>You can switch between different versions of terraform by typing the command <code>testtfswitch</code> on your terminal.</li>
 <li>Select the version of terraform you require by using the up and down arrow.</li>
 <li>Hit <strong>Enter</strong> to select the desired version.</li>
 </ol>
 <p>The most recently selected versions are presented at the top of the dropdown.</p>
 <h3 id="supply-version-on-command-line">Supply version on command line</h3>
-<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-v4.gif" alt="drawing" style="width: 600px;"/></p>
+<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch-v4.gif" alt="drawing" style="width: 600px;"/></p>
 <ol>
 <li>You can also supply the desired version as an argument on the command line.</li>
-<li>For example, <code>tfswitch 0.10.5</code> for version 0.10.5 of terraform.</li>
+<li>For example, <code>testtfswitch 0.10.5</code> for version 0.10.5 of terraform.</li>
 <li>Hit <strong>Enter</strong> to switch.</li>
 </ol>
 <h3 id="see-all-versions-including-beta-alpha-and-release-candidatesrc">See all versions including beta, alpha and release candidates(rc)</h3>
-<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-v5.gif" alt="drawing" style="width: 600px;"/></p>
+<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch-v5.gif" alt="drawing" style="width: 600px;"/></p>
 <ol>
 <li>Display all versions including beta, alpha and release candidates(rc). </li>
-<li>For example, <code>tfswitch -l</code> or <code>tfswitch --list-all</code> to see all versions.</li>
+<li>For example, <code>testtfswitch -l</code> or <code>testtfswitch --list-all</code> to see all versions.</li>
 <li>Hit <strong>Enter</strong> to select the desired version.</li>
 </ol>
 <h3 id="use-versiontf-file">Use version.tf file</h3>
@@ -487,57 +487,57 @@
 }
 </code></pre>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/versiontf.gif" alt="drawing" style="width: 600px;"/></p>
-<h3 id="use-tfswitchtoml-file-for-non-admin-users-with-limited-privilege-on-their-computers">Use .tfswitch.toml file  (For non-admin - users with limited privilege on their computers)</h3>
-<p>This is similiar to using a .tfswitchrc file, but you can specify a custom binary path for your terraform installation</p>
-<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-v7.gif" alt="drawing" style="width: 600px;"/>    <br />
-<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-v8.gif" alt="drawing" style="width: 600px;"/></p>
+<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/versiontf.gif" alt="drawing" style="width: 600px;"/></p>
+<h3 id="use-testtfswitchtoml-file-for-non-admin-users-with-limited-privilege-on-their-computers">Use .testtfswitch.toml file  (For non-admin - users with limited privilege on their computers)</h3>
+<p>This is similiar to using a .testtfswitchrc file, but you can specify a custom binary path for your terraform installation</p>
+<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch-v7.gif" alt="drawing" style="width: 600px;"/>    <br />
+<img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch-v8.gif" alt="drawing" style="width: 600px;"/></p>
 <ol>
 <li>Create a custom binary path. Ex: <code>mkdir /Users/warrenveerasingam/bin</code> (replace warrenveerasingam with your username)</li>
 <li>Add the path to your PATH. Ex: <code>export PATH=$PATH:/Users/warrenveerasingam/bin</code> (add this to your bash profile or zsh profile)</li>
-<li>Pass -b or --bin parameter with your custom path to install terraform. Ex: <code>tfswitch -b /Users/warrenveerasingam/bin/terraform 0.10.8</code></li>
-<li>Optionally, you can create a <code>.tfswitch.toml</code> file in your terraform directory.</li>
-<li>Your <code>.tfswitch.toml</code> file should look like this:</li>
+<li>Pass -b or --bin parameter with your custom path to install terraform. Ex: <code>testtfswitch -b /Users/warrenveerasingam/bin/terraform 0.10.8</code></li>
+<li>Optionally, you can create a <code>.testtfswitch.toml</code> file in your terraform directory.</li>
+<li>Your <code>.testtfswitch.toml</code> file should look like this:</li>
 </ol>
 <pre><code>bin = &quot;/Users/warrenveerasingam/bin/terraform&quot;
 version = &quot;0.11.3&quot;
 </code></pre>
 
 <ol>
-<li>Run <code>tfswitch</code> and it should automatically install the required terraform version in the specified binary path</li>
+<li>Run <code>testtfswitch</code> and it should automatically install the required terraform version in the specified binary path</li>
 </ol>
-<h3 id="use-tfswitchrc-file">Use .tfswitchrc file</h3>
-<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/tfswitch-v6.gif" alt="drawing" style="width: 600px;"/></p>
+<h3 id="use-testtfswitchrc-file">Use .testtfswitchrc file</h3>
+<p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/testtfswitch/testtfswitch-v6.gif" alt="drawing" style="width: 600px;"/></p>
 <ol>
-<li>Create a <code>.tfswitchrc</code> file containing the desired version</li>
-<li>For example, <code>echo "0.10.5" &gt;&gt; .tfswitchrc</code> for version 0.10.5 of terraform</li>
-<li>Run the command <code>tfswitch</code> in the same directory as your <code>.tfswitchrc</code></li>
+<li>Create a <code>.testtfswitchrc</code> file containing the desired version</li>
+<li>For example, <code>echo "0.10.5" &gt;&gt; .testtfswitchrc</code> for version 0.10.5 of terraform</li>
+<li>Run the command <code>testtfswitch</code> in the same directory as your <code>.testtfswitchrc</code></li>
 </ol>
-<p><em>Instead of a <code>.tfswitchrc</code> file, a <code>.terraform-version</code> file may be used for compatibility with <a href="https://github.com/tfutils/tfenv#terraform-version-file"><code>tfenv</code></a> and other tools which use it</em></p>
+<p><em>Instead of a <code>.testtfswitchrc</code> file, a <code>.terraform-version</code> file may be used for compatibility with <a href="https://github.com/tfutils/tfenv#terraform-version-file"><code>tfenv</code></a> and other tools which use it</em></p>
 <p><strong>Automatically switch with bash</strong></p>
 <p>Add the following to the end of your <code>~/.bashrc</code> file:
-(Use either <code>.tfswitchrc</code> or <code>.tfswitch.toml</code> or <code>.terraform-version</code>)</p>
-<pre><code class="sh">cdtfswitch(){
+(Use either <code>.testtfswitchrc</code> or <code>.testtfswitch.toml</code> or <code>.terraform-version</code>)</p>
+<pre><code class="sh">cdtesttfswitch(){
   builtin cd &quot;$@&quot;;
   cdir=$PWD;
-  if [ -e &quot;$cdir/.tfswitchrc&quot; ]; then
-    tfswitch
+  if [ -e &quot;$cdir/.testtfswitchrc&quot; ]; then
+    testtfswitch
   fi
 }
-alias cd='cdtfswitch'
+alias cd='cdtesttfswitch'
 </code></pre>
 
 <p><strong>Automatically switch with zsh</strong></p>
 <p>Add the following to the end of your <code>~/.zshrc</code> file:</p>
-<pre><code class="sh">load-tfswitch() {
-  local tfswitchrc_path=&quot;.tfswitchrc&quot;
+<pre><code class="sh">load-testtfswitch() {
+  local testtfswitchrc_path=&quot;.testtfswitchrc&quot;
 
-  if [ -f &quot;$tfswitchrc_path&quot; ]; then
-    tfswitch
+  if [ -f &quot;$testtfswitchrc_path&quot; ]; then
+    testtfswitch
   fi
 }
-add-zsh-hook chpwd load-tfswitch
-load-tfswitch
+add-zsh-hook chpwd load-testtfswitch
+load-testtfswitch
 </code></pre>
 
 <blockquote>
@@ -548,8 +548,8 @@ load-tfswitch
 <pre><code class="sh">cd(){
   builtin cd &quot;$@&quot;;
   cdir=$PWD;
-  if [ -e &quot;$cdir/.tfswitchrc&quot; ]; then
-    tfswitch
+  if [ -e &quot;$cdir/.testtfswitchrc&quot; ]; then
+    testtfswitch
   fi
 }
 </code></pre>

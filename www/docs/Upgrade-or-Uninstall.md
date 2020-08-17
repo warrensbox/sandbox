@@ -3,7 +3,7 @@
 ### Homebrew
 
 ```ruby
-brew upgrade warrensbox/tap/tfswitch
+brew upgrade warrensbox/tap/testtfswitch
 ```
 ### Linux
 
@@ -18,12 +18,12 @@ curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/
 ### Homebrew
 
 ```ruby
-brew uninstall warrensbox/tap/tfswitch
+brew uninstall warrensbox/tap/testtfswitch
 ```
 ### Linux
 
 Run:
 
 ```sh
-rm /usr/local/bin/tfswitch
+rm /usr/local/bin/testtfswitch
 ```

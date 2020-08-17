@@ -1,13 +1,13 @@
 ## Installation
 
-`tfswitch` is available for MacOS and Linux based operating systems.
+`testtfswitch` is available for MacOS and Linux based operating systems.
 
 ### Homebrew
 
 Installation for MacOS is the easiest with Homebrew. <a href="https://brew.sh/" target="_blank">If you do not have homebrew installed, click here</a>.
 
 ```ruby
-brew install warrensbox/tap/tfswitch
+brew install warrensbox/tap/testtfswitch
 ```
 
 ### Linux

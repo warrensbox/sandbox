@@ -28,10 +28,12 @@ workflows:
 
   build_and_test:
     jobs:
-      - build:  
-          branches:
-            ignore:
-              - gh-pages
+      build:
+        branches:
+          ignore:
+            - develop
+            - /feature-.*/
+
                       
           
       

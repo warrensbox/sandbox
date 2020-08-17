@@ -14,23 +14,14 @@ jobs:
       - run: 
           command: |    
             set +e   
-            apt-get update 
-            apt-get install -y wget 
-            rm -rf /var/lib/apt/lists/*
 
-            echo "Installing tfswitch locally"
+            sudo apt-get install python3
+            sudo apt-get install python3-pip
+            pip3 install mkdocs-material
+            cd www
+            mkdocs gh-deploy --force
 
-            wget https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh 
-            chmod 755 install.sh
-            ./install.sh -b bin-directory
 
-            CUSTOMBIN=`pwd`/bin             #set custom bin path
-            mkdir $CUSTOMBIN                #create custom bin path
-            export PATH=$PATH:$CUSTOMBIN    #Add custom bin path to PATH environment
-
-            ./bin-directory/tfswitch -b $CUSTOMBIN/terraform 0.11.7
-
-            terraform -v                    #testing
 
 workflows:
   version: 2

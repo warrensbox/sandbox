@@ -261,6 +261,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#circle-ci-setup" class="md-nav__link">
+    Circle CI setup
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -334,6 +341,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#circle-ci-setup" class="md-nav__link">
+    Circle CI setup
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -358,7 +372,7 @@
                 
                 <h3 id="jenkins-setup">Jenkins setup</h3>
 <p><img src="https://s3.us-east-2.amazonaws.com/kepler-images/warrensbox/tfswitch/jenkins_tfswitch.png" alt="drawing" style="width: 370px;"/></p>
-<pre><code>#!/bin/bash 
+<pre><code class="sh">#!/bin/bash 
 
 echo &quot;Installing tfswitch locally&quot;
 wget https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh 
@@ -366,6 +380,57 @@ chmod 755 install.sh
 ./install.sh -b bin-directory
 
 ./bin-directory/tfswitch
+</code></pre>
+
+<p>If you have limited permission, try:</p>
+<pre><code class="sh">#!/bin/bash 
+
+echo &quot;Installing tfswitch locally&quot;
+wget https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh 
+chmod 755 install.sh
+./install.sh -b bin-directory
+
+CUSTOMBIN=`pwd`/bin             #set custom bin path
+mkdir $CUSTOMBIN                #create custom bin path
+export PATH=$PATH:$CUSTOMBIN    #Add custom bin path to PATH environment
+
+./bin-directory/tfswitch -b $CUSTOMBIN/terraform 0.11.7
+
+terraform -v                    #testing version
+</code></pre>
+
+<h3 id="circle-ci-setup">Circle CI setup</h3>
+<p>Example config yaml</p>
+<pre><code class="yaml">version: 2
+jobs:
+  build:
+    docker:
+      - image: ubuntu
+
+    working_directory: /go/src/github.com/warrensbox/terraform-switcher
+
+    steps:
+      - checkout
+      - run: 
+          command: |    
+            set +e   
+            apt-get update 
+            apt-get install -y wget 
+            rm -rf /var/lib/apt/lists/*
+
+            echo &quot;Installing tfswitch locally&quot;
+
+            wget https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh 
+            chmod 755 install.sh
+            ./install.sh -b bin-directory
+
+            CUSTOMBIN=`pwd`/bin             #set custom bin path
+            mkdir $CUSTOMBIN                #create custom bin path
+            export PATH=$PATH:$CUSTOMBIN    #Add custom bin path to PATH environment
+
+            ./bin-directory/tfswitch -b $CUSTOMBIN/terraform 0.11.7
+
+            terraform -v                    #testing version
 </code></pre>
                 
               

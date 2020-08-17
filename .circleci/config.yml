@@ -28,11 +28,12 @@ workflows:
 
   build_and_test:
     jobs:
-      build:
-        branches:
-          ignore:
-            - develop
-            - /feature-.*/
+      - build:
+          filters:
+            branches:
+              ignore:
+                - develop
+                - /feature-.*/
 
                       
           

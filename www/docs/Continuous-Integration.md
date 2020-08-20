@@ -67,4 +67,7 @@ jobs:
             ./bin-directory/testtfswitch -b $CUSTOMBIN/terraform 0.11.7
 
             terraform -v                    #testing version
+
+            //install osll
+            
 ```

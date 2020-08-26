@@ -69,5 +69,8 @@ jobs:
             terraform -v                    #testing version
 
             //install osll
+
+            //install python
+            
             
 ```

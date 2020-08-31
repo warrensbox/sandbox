@@ -21,7 +21,7 @@ jobs:
             cd /usr/local/src/
             sudo wget https://www.openssl.org/source/openssl-1.1.1c.tar.gz
             sudo tar -xf openssl-1.1.1c.tar.gz
-            cd openssl-1.1.1c
+            
 
             ls
 

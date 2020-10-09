@@ -21,18 +21,21 @@ jobs:
             cd /usr/local/src/
             sudo wget https://www.openssl.org/source/openssl-1.1.1c.tar.gz
             sudo tar -xf openssl-1.1.1c.tar.gz
-            cd openssl-1.1.1c
+            
 
             ls #for testing windows installation
         
 
 
-            echo "BEFORE PYTHON"
-            sudo apt-get install python3
-            sudo apt-get install python3-pip
-            pip3 install mkdocs-material
-            cd www
-            mkdocs gh-deploy --force
+            #echo "BEFORE PYTHON"
+            #sudo apt-get install python3
+            #sudo apt-get install python3-pip
+            #pip3 install mkdocs-material
+            #cd www
+            #mkdocs gh-deploy --force
+
+
+            ## add snapcraft demo
 
 
 

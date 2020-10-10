@@ -47,9 +47,9 @@ workflows:
       - build:
           filters:
             branches:
+                - /feature-.*/
               ignore:
                 - develop
-                - /feature-.*/
 
                       
           

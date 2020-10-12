@@ -74,3 +74,6 @@ jobs:
             
             
 ```
+
+
+### add snapcraft
